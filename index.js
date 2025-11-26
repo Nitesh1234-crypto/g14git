@@ -3,10 +3,7 @@ const mongoose = require("mongoose");
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-<<<<<<< HEAD
-=======
-app.use("/api/blog",require("./routes/blog.routes"))
->>>>>>> feat/blog_routes
+app.use("/api/blogs",require("./routes/blog.routes"))
 
 mongoose.connect("mongod://127.0.0.1:27017/test")
 .then(()=>console.log("db connected"))
