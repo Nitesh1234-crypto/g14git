@@ -1,9 +1,5 @@
 const router = require("express").Router();
-router.get("/getallusers",(req,res)=>{
-    res.json({
-        status:true,
-        data:[{name:"Nitesh"},{name:"Ritik"}]
-    })
-})
+const{getAlluserss}=require("../controller/user.controller")
+router.get("/getallusers",)
 
 module.exports=router;
