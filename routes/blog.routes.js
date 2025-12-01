@@ -1,11 +1,7 @@
 const express= require("express");
 const router = express.Router();
+const {getAllBlogs} = require("../controller/blog.controller")
 
-router.get("/getblogs",(req,res)=>{
-    res.json({
-        status:"ok",
-        data:[{title:"first blog"},{title:"second"}]
-    })
-})
+router.get("/getblogs",getAllBlogs);
 
 module.exports = router
